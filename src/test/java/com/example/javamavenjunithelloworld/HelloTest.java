@@ -41,9 +41,9 @@ public class HelloTest {
         
         Random rand = new Random();
         int n = rand.nextInt(2) + 1;
-        
+        System.out.println(" n = "+n); 
         Hello hi = new Hello();
-        hi.setTimes(3);
+        hi.setTimes(n);
         hi.sayHello(stream);
 
         // Does it say "Hello!" three times?
