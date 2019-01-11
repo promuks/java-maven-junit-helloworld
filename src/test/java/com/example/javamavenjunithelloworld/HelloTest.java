@@ -1,4 +1,5 @@
 package com.example.javamavenjunithelloworld;
+import java.util.Random;
 
 
 import org.junit.jupiter.api.Disabled;
@@ -37,6 +38,10 @@ public class HelloTest {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
 
+        
+        Random rand = new Random();
+        int n = rand.nextInt(2) + 1;
+        
         Hello hi = new Hello();
         hi.setTimes(3);
         hi.sayHello(stream);
