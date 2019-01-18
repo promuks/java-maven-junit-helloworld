@@ -39,6 +39,7 @@ pipeline {
                         currentBuild.result = "SUCCESS"	// sets the ordinal as 0 and boolean to true
                         //currentBuild.build_agent_name = env.NODE_NAME
                         println "ENV BRANCH_NAME"+env.BRANCH_NAME
+                        println "PROJECT TYPE"+(env.BRANCH_NAME.split("-"))[0]
                         echo currentBuild.displayName
                         echo currentBuild.fullDisplayName
                         //currentBuild.description = env.NODE_NAME
