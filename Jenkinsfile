@@ -20,7 +20,7 @@ pipeline {
     stages {
         stage('Preparation') {
             steps {
-                git branch: 'master',changelog: false, credentialsId: 'promuks-github-connect', poll: false, url: 'https://github.com/promuks/java-maven-junit-helloworld'
+                git branch: 'develop',changelog: false, credentialsId: 'promuks-github-connect', poll: false, url: 'https://github.com/promuks/java-maven-junit-helloworld'
             }
         }
         stage('Build') {
