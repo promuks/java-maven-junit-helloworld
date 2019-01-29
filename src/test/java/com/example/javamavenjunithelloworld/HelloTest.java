@@ -39,7 +39,7 @@ public class HelloTest {
         PrintStream stream = new PrintStream(os, true);
 
         Random rand = new Random(System.currentTimeMillis());
-        int n = rand.nextInt(2) + 1;
+        int n = rand.nextInt(3) + 1;
         System.out.println(" n = "+n); 
         Hello hi = new Hello();
         hi.setTimes(n);
