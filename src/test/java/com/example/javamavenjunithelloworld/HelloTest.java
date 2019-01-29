@@ -38,8 +38,7 @@ public class HelloTest {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
 
-        
-        Random rand = new Random();
+        Random rand = new Random(System.currentTimeMillis());
         int n = rand.nextInt(2) + 1;
         System.out.println(" n = "+n); 
         Hello hi = new Hello();
