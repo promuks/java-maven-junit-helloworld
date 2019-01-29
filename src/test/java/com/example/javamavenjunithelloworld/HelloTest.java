@@ -40,7 +40,7 @@ public class HelloTest {
 
         
         Random rand = new Random();
-        int n = rand.nextInt(2) + 1;
+        int n = rand.nextInt(3) + 1;
         System.out.println(" n = "+n); 
         Hello hi = new Hello();
         hi.setTimes(n);
