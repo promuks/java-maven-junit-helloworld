@@ -41,7 +41,7 @@ public class HelloTest {
         
         Random rand = new Random();
         int n = rand.nextInt(3) + 1;
-        System.out.println(" n = "+n); 
+        System.out.println("nn = "+n); 
         Hello hi = new Hello();
         hi.setTimes(n);
         hi.sayHello(stream);
